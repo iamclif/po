@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* ----------------------------------------------
+[Theme info]
+	Template Name: 		Jabá
+	Version: 			1.0
+	Author: 			Jônatan Fróes
+	Author email:	 	jonatan.froes@yahoo.com.br
+	For sell at:		http://themeforest.net/
+	Date of creation:	July 10, 2009
+	Last Date Modified: July 10, 2009
+ ------------------------------------------------ */
+@import url(reset.css);
+@import url(style.css);
+@import url(../themes/dark/galleries.css);
+@import url(main.css);
+
+/* ----------------------------------------------
+	End of main.css
+ ------------------------------------------------ */

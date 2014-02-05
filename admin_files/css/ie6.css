@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* ----------------------------------------------
+	[ie6.css] - fix ie6 bugs
+ ------------------------------------------------ */
+/*img, a, div, h1, span, .services { behavior: url(iepngfix.htc) }*/
+p { font-size:12px; line-height:15px;}
+#sidebar .box h3 { font-size: 16px;	}
+#main {	margin-left: 10px; }
+
+
+/* ----------------------------------------------
+	End of main.css
+ ------------------------------------------------ */
