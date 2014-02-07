@@ -1,5 +1,5 @@
 <?php if($current_page) : ?>
-    <div class="grid_5 page_content">
+    <div class="cms">
         <?php echo $current_page->content; ?>
     </div><!-- end .grid_5 page_content" -->
 <?php else : ?>

@@ -29,24 +29,24 @@
     <div class="content-wrap">
         <h3>add photos</h3>
         <div class="conent-inner">
-        	<h4>Single file</h4>
-				<form action="<?php echo site_url('admin/save_photo/' . $gallery->id . '/' . md5('flash_data') ); ?>" method="post" enctype="multipart/form-data" class="nyroModal" rev="modal">
-	                <label for="Filedata">File</label>
-    	            <input type="file" name="Filedata" id="Filedata" />
+            <h4>Single file</h4>
+                <form action="<?php echo site_url('admin/save_photo/' . $gallery->id . '/' . md5('flash_data') ); ?>" method="post" enctype="multipart/form-data" class="nyroModal" rev="modal">
+                    <label for="Filedata">File</label>
+                    <input type="file" name="Filedata" id="Filedata" />
                     
                     <label for="send"></label>
                     <input name="send" type="submit" value="send" />
                 </form>
                 <hr  />
                 
-        	<h4>Multiple files (beta)</h4>
+            <h4>Multiple files (beta)</h4>
             <div id="fileQueue"></div>
             <input type="file" name="uploadify" id="uploadify" />
             <p>
                 <a href="javascript:jQuery('#uploadify').uploadifyClearQueue()">Cancel All Uploads</a> | 
                 <a href="javascript:jQuery('#uploadify').uploadifyUpload()">do upload</a> | 
-				<?php echo anchor('admin/add_photo/'. $gallery->id, 'refresh page'); ?>
-			</p>
+                <?php echo anchor('admin/add_photo/'. $gallery->id, 'refresh page'); ?>
+            </p>
         </div>
     </div>
 </div>
@@ -58,10 +58,10 @@
         <li>
             <a href="<?php echo site_url("admin/delete_photo/{$res->id}"); ?>" class="nyroModal" rev="modal">delete</a> | 
             <a href="<?php echo site_url("admin/edit_photo/{$res->id}"); ?>" class="nyroModal" rev="modal">edit</a>
-        	<span class="photothumb">
-				<a href="<?php echo base_url()  . "uploads/gallery/{$res->galleries_id}/{$res->image}"; ?>" class="nyroModal">
-					<img src="<?php echo get_thumb(base_url()."uploads/gallery/{$res->galleries_id}/{$res->image}"); ?>" alt="" />
-				</a>
+            <span class="photothumb">
+                <a href="<?php echo base_url()  . "uploads/gallery/{$res->galleries_id}/{$res->image}"; ?>" class="nyroModal">
+                    <img src="<?php echo get_thumb(base_url()."uploads/gallery/{$res->galleries_id}/{$res->image}"); ?>" alt="" />
+                </a>
             </span>
         </li>
     <?php endforeach;?>

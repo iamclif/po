@@ -14,28 +14,24 @@
 </head>
 <body>
     <div id="container">
-        <div id="header" class="grid_12">
+        <div id="header">
             <h1 id="logo">John Pollak Photography</h1>
         </div>
-        <div class="clear"></div>
-        <div id="nav" class="grid_12">
+        <div id="nav">
         <?php echo $this->g->create_nav(TRUE, $this->nav); ?></div>
-        <div class="clear"></div>
-        <?php echo $contents; ?>
-        <div class="clear"></div>
-        <div id="footer" class="grid_12">
-        <?php echo $this->g->create_nav(TRUE, $this->nav);  ?>
-        <p>&copy; Copyright <?php echo date("Y", time()); ?> John Pollak.
-            <span class="signature">Site Designed by 
-                <a href="http://www.clifjordan.com/">Clif Jordan</a>
-            </span>
-            <span class="signature">CMS by
-                <a href="http://tinyurl.com/jonatanfroes" rel="external">Jônatan Fróes</a>
-                - &nbsp;Powered by<a href="http://codeigniter.com" rel="external">CodeIgniter</a>
-            </span>
-        </p>
+        <div class="content"><?php echo $contents; ?></div>
+        <div id="footer">
+            <?php echo $this->g->create_nav(TRUE, $this->nav);  ?>
+            <p>&copy; Copyright <?php echo date("Y", time()); ?> John Pollak.
+                <span class="signature">Site Designed by 
+                    <a href="http://www.clifjordan.com/">Clif Jordan</a>
+                </span>
+                <span class="signature">CMS by
+                    <a href="http://tinyurl.com/jonatanfroes" rel="external">Jônatan Fróes</a>
+                    - &nbsp;Powered by<a href="http://codeigniter.com" rel="external">CodeIgniter</a>
+                </span>
+            </p>
         </div>
-        <div class="clear"></div>
     </div>
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>

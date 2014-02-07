@@ -411,11 +411,6 @@ class Gallerymodel extends Model {
 
 		//add default pages
 		$output[] = array('url' => '', 'title' => 'home' );
-//		$output[] = array('url' => 'video', 'title' => 'video' );
-//		$output[] = array('url' => 'biography', 'title' => 'biography' );
-//		$output[] = array('url' => '', 'title' => 'galleries' );
-//		$output[] = array('url' => 'contact', 'title' => 'contact' );
-
 
 		//get active pages
 		$pages = $this->pages('Y');
