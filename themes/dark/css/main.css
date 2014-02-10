@@ -463,7 +463,7 @@ legend {
 }
 .contact_photo {
     float: right;
-    margin: 1em 35px 0 0;
+    margin: 0;
 }
 input, textarea, select {
     padding: 3px;
